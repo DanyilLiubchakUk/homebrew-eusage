@@ -11,6 +11,12 @@ brew install --cask eusage
 
 The cask clears quarantine after install because the free macOS build is unsigned.
 
+## Release updates
+
+`Casks/eusage.rb` is updated automatically by the `DanyilLiubchakUk/eusage`
+publish workflow after each release tag. Manual edits are only for recovery if
+that workflow fails.
+
 ## Upgrade
 
 The app normally updates itself through GitHub Releases and the in-app `Restart to update` button.
