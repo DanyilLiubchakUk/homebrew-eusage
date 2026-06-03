@@ -6,10 +6,10 @@ Public Homebrew tap for eUsage macOS installs.
 
 ```bash
 brew tap DanyilLiubchakUk/eusage
-brew install --cask eusage --no-quarantine
+brew install --cask eusage
 ```
 
-`--no-quarantine` is required for the free unsigned macOS build.
+The cask clears quarantine after install because the free macOS build is unsigned.
 
 ## Upgrade
 
@@ -19,5 +19,12 @@ Use Homebrew only if reinstall or recovery is needed:
 
 ```bash
 brew update
-brew upgrade --cask eusage --no-quarantine
+brew upgrade --cask eusage
+```
+
+If macOS still blocks the app, run:
+
+```bash
+xattr -cr /Applications/eUsage.app
+open /Applications/eUsage.app
 ```

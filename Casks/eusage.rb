@@ -14,6 +14,12 @@ cask "eusage" do
 
   app "eUsage.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/eUsage.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/app.eusage.desktop",
     "~/Library/Logs/app.eusage.desktop",
