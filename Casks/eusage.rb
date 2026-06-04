@@ -1,9 +1,9 @@
 cask "eusage" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.6.26"
-  sha256 arm:   "8d0ab81ec1cfa3c6484bf93ed22ae6fefe2d8a8e496082ce4963f71e416d63f1",
-         intel: "c65052b0587c228da89d99024275253a0962d083f0f0d092f4205f4d216ca850"
+  version "0.6.27"
+  sha256 arm:   "f1e307eab556ab93451ba2316f4704496fedff1c018b59ae17ba8007cabd72a7",
+         intel: "f6f3892b0eac8f001658c232592584b1dd04749f5c58f07ba6fe2da490b2ce01"
 
   url "https://github.com/DanyilLiubchakUk/eusage/releases/download/v#{version}/eUsage_#{version}_#{arch}.dmg"
   name "eUsage"
