@@ -5,7 +5,7 @@ Public Homebrew tap for eUsage macOS installs.
 ## Install
 
 ```bash
-brew tap DanyilLiubchakUk/eusage
+brew tap dliubchak/eusage
 brew install --cask eusage
 ```
 
@@ -13,7 +13,7 @@ The cask clears quarantine after install because the free macOS build is unsigne
 
 ## Release updates
 
-`Casks/eusage.rb` is updated automatically by the `DanyilLiubchakUk/eusage`
+`Casks/eusage.rb` is updated automatically by the `dliubchak/eusage`
 publish workflow after each release tag. Manual edits are only for recovery if
 that workflow fails.
 
