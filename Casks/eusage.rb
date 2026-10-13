@@ -1,14 +1,14 @@
 cask "eusage" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.6.30"
-  sha256 arm:   "045c1efc8b1ff2999fbf434344ff2e1da3c98e0899603168cc2be3336ebe6de8",
-         intel: "6a64fb48b3434fcd2d5ef389c44ca27ae881b6635ecafb53d505c4fb6b14d30f"
+  version "0.6.31"
+  sha256 arm:   "3130b95caa7c41adcda4207052905a7b9471543f1164c7eaf83e61d270380928",
+         intel: "4eabdf01969d75d48bed451d1c5d90168955a3d02855eff910983423a71f3aab"
 
-  url "https://github.com/DanyilLiubchakUk/eusage/releases/download/v#{version}/eUsage_#{version}_#{arch}.dmg"
+  url "https://github.com/dliubchak/eusage/releases/download/v#{version}/eUsage_#{version}_#{arch}.dmg"
   name "eUsage"
   desc "Internal team AI usage tracker"
-  homepage "https://github.com/DanyilLiubchakUk/eusage"
+  homepage "https://github.com/dliubchak/eusage"
 
   depends_on macos: :ventura
 
